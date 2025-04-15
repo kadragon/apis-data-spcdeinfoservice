@@ -6,8 +6,6 @@ export default {
 	const allowedPaths = ["/getRestDeInfo", "/getAnniversaryInfo", "/get24DivisionsInfo"];
 
     if (allowedPaths.includes(url.pathname)) {
-      const query = url.search; // ?serviceKey=...&solYear=...&solMonth=...
-
       const params = url.searchParams;
 
       // serviceKey가 없으면 env에서 자동 추가
